@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c0c4c0; /* Azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.header {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre el encabezado y la calculadora */
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Fieldset y formulario */
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #777777;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: right;
+}
+
+/* Contenedor de botones */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre botones */
+    margin-bottom: 10px; /* Espaciado entre filas de botones */
+}
+
+/* Botones */
+/* Botones específicos: D y C */
+input[type="button"][value="D"],
+input[type="button"][value="C"] {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+input[type="button"][value="D"]:hover,
+input[type="button"][value="C"]:hover {
+    background-color: #a71d2a; /* Rojo oscuro */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+input[type="button"],
+input[type="submit"] {
+    width: 70px;
+    height: 45px;
+    margin: 0; /* Elimina márgenes adicionales */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia a un azul más oscuro */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
