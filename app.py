@@ -3,7 +3,7 @@ from operacion import separar, numeros, operar
 
 app = Flask(__name__)
 
-saludo = "Bienvenido esto es una calculadora realizada con Flask  en python"
+saludo = "Bienvenido a tu calculadora virtual con Flask en Python"
 @app.route('/')
 def index():
     return render_template('index.html', saludo=saludo)
